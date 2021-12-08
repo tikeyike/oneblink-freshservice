@@ -1,0 +1,20 @@
+{
+  "server": {
+    "project": "ONEBLINK API ENVIRONMENT",
+    "awsProfile": "prod",
+    "cors": true,
+    "routes": [
+      {
+        "route": "/send-to-freshservice",
+        "module": "./src/routes/send-to-freshservice.js"
+      }
+    ],
+    "variables": {
+      "FRESHSERVICE_ENDPOINT": "freshservice-demo",
+      "FRESHSERVICE_API_KEY": "FRESHSERVICE API KEY",
+      "WEB_HOOK_SECRET": "YOUR WEBHOOK SECRET FOR YOUR ONEBLINK SUBMISSION EVENT (CAN BE WHATEVER YOU WANT)",
+      "FORMS_ACCESS_KEY": "ONEBLINK API KEY",
+      "FORMS_SECRET_KEY": "ONEBLINK API KEY SECRET"
+    }
+  }
+}
